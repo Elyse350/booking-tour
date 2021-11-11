@@ -1,0 +1,455 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins' sans-serif;
+}
+.topnav {
+  width: 100%;
+  /* height: 80px; */
+  background-color: #195f20;
+  padding: 15px 10px 2px 50px;
+  display: flex;
+  box-shadow: 0px 3px rgb(17, 19, 17);
+}
+.logo {
+  width: 150px;
+  height: 50px;
+  background-color: whitesmoke;
+  text-align: center;
+}
+.navbar-right {
+  height: 70px;
+  width: 75%;
+  float: left;
+  margin-left: 150px;
+}
+ul {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+  margin-left: 150px;
+  font-size: large;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial;
+  font-weight: bold; 
+  transition: 0.4s ease-in-out;
+}
+ul li a:hover {
+  color: rgb(7, 241, 7);
+}
+.home-container {
+  width: 100%;
+  height: 95vh;
+  /* background-image:linear-gradient(to top ,rgba(17, 83, 15, 0.301)50%,rgba(17, 83, 15, 0.301)50%), url(./tour.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    background-attachment: fixed;
+    /* position: fixed; */
+  /* background-position: bottom;  */
+  overflow: hidden;
+  z-index: -2;
+  /* box-sizing: border-box; */
+}
+body {
+  background-image: linear-gradient(
+      to top,
+      rgba(17, 83, 15, 0.301) 50%,
+      rgba(17, 83, 15, 0.301) 50%
+    ),
+    url(./tour.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  background-attachment: fixed;
+  /* position: fixed; */
+  background-position: bottom;
+}
+
+.home-container h1 {
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bold;
+  font-family: "Times New Roman";
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: white;
+}
+.form {
+  width: 25%;
+  height: 380px;
+  background: rgba(245, 245, 245, 0.493);
+  position: absolute;
+  left: 1100px;
+  top: 200px;
+  padding: 20px;
+  border-radius: 10px;
+}
+button {
+  width: 55%;
+  height: 40px;
+  background: white;
+  margin-top: 230px;
+  margin-left: 70px;
+  border-radius: 20px;
+  border-color: #195f20;
+}
+button a {
+  color: #195f20;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.sub-container {
+  width: 100%;
+  height: 88vh;
+  /* padding-left: 50px;
+    padding-top:50px ; */
+  display: flex;
+  background-color: white;
+  box-sizing: border-box;
+}
+.tour-container {
+  width: 55%;
+  height: 88vh;
+  background-color: white;
+  margin-bottom: 80px;
+  margin-right: 50px;
+}
+.tour-container h1 {
+  margin-bottom: 20px;
+  padding: 50px;
+  color: #195f20;
+  font-family: "Times New Roman";
+  font-style: unset;
+}
+.tour-container label {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 50px;
+}
+.tour-container select {
+  padding-left: 200px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 50px;
+  background-color: whitesmoke;
+  border: none;
+  box-shadow: 0px 2px rgba(160, 155, 155, 0.904);
+}
+.tour-container button {
+  float: right;
+  margin-top: 50px;
+}
+.gallery-container {
+  background-color: #000;
+  width: 100%;
+  height: 90vh;
+}
+.signup-form {
+  width: 30%;
+  height: 65vh;
+  background-color: rgba(140, 182, 150, 0.699);
+  margin: auto;
+  padding: 20px;
+}
+.signup-form h2 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+.signup-form label {
+  width: 90px;
+  /* margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 50px; */
+  display: inline-block;
+  margin-left: 50px;
+  font-size: large;
+}
+
+.signup-form input {
+  width: 200px;
+  padding: 5px;
+  margin-left: 10px;
+}
+.signin-form {
+  width: 30%;
+  height: 65vh;
+  background-color: rgba(140, 182, 150, 0.699);
+  margin: auto;
+  padding: 20px;
+}
+.signin-form h2 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.signin-form label {
+  width: 90px;
+  display: inline-block;
+  margin-left: 50px;
+  font-size: large;
+}
+.signin-form input {
+  width: 200px;
+  padding: 5px;
+  margin-left: 10px;
+}
+.signin-form input {
+  width: 200px;
+  padding: 5px;
+  margin-left: 10px;
+}
+.pw-check{
+    margin-left: 10px;
+}
+.pw-check label{
+width: 20px;
+
+}
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.section-content{
+    width: 55%;
+    float: left;
+
+}
+.img-section{
+    float: right;
+    width: 40%;
+}
+.img-section img{
+    width: 100%;
+    height: auto;
+
+}
+.section-content .tittle{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.section-content .content h3{
+margin-top: 20px;
+color: #5d5d5d;
+font-size: 21px;
+}
+.section-content .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 19px;
+    line-height: 1.5;
+}
+.section-content .content .button{
+    margin-top: 30px;
+}
+.section-content .content .button a{
+    background-color: #3d3d3d;
+    padding:12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.section-content .content .button a:hover{
+    background-color: #a52a2a;
+    color: #fff;
+}
+.section-content .social{
+    margin:40px 40px;
+}
+.section-content .social i{
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+.section-content .social i:hover{
+    color: #3d3d3d;
+}
+@media screen and (max-width:768px){
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .section-content{
+        width: 100%;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+    .img-section{
+        width: 100%;
+        float: none;
+        display: block;
+        margin: auto;
+       
+    }
+    .img-section img{
+        width: 100%;
+        display: block;
+        height: auto;
+        margin: auto;
+    }
+    .section-content .tittle{
+        text-align: center;
+        font-size: 19px ;
+    }
+    .section-content .content .button{
+       text-align: center;
+    }
+    .section-content .content .button a{
+        padding: 9px 30px;
+    }
+    .section-content .social{
+        text-align: center;
+    }
+
+} 
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    background: rgba(43, 116, 43, 0.699);
+    background-size: cover;
+
+}
+.contact .content2{ 
+   max-width: 800px;
+   text-align: center;
+}
+.contact .content2 h2{
+    font-size:36px ;
+    font-weight: 500;
+    color:rgb(9, 150, 21);
+}.contact .content2 p{
+    font-weight: 300;
+    color:#fff;
+}
+.contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.contact-container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-container .contactinfo .box{
+    position: relative;
+    padding: 20px 0px;
+    display: flex;
+}
+.contact-container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background:rgb(245, 247, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contact-container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color:#fff;
+    flex-direction: column;
+    font-weight:300;
+}
+.contact-container .contactinfo .box .text h3{
+    font-weight: 500;
+    color:#00bcd4
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactform h2{
+    font-size: 30px;
+    color: rgb(247, 235, 235);
+    font-weight: 500;
+}
+.contactform .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputBox input,
+.contactform .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline:none;
+    resize: none;
+}
+.contactform .inputBox span{
+    position:absolute;
+    left:0; 
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    pointer-events: none;
+    transition: 0.5s ;
+    color: #666;
+
+}
+.contactform .inputBox  input:focus~span,
+.contactform .inputBox  input:valid~span ,
+.contactform .inputBox  textarea:focus~span,
+.contactform .inputBox  textarea:valid~span{
+      color: #e91e63;
+      font-size: 12px;
+      transform: translateY(-20px);
+ }
+ .contactform .inputBox input[type="submit"]{
+     width: 100px;
+     background: #00bcd4;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+     padding: 10px;
+     font-size: 18px;
+ }
+ @media(max-width:991px){
+     .contact{
+         padding: 50px;
+     }
+     .contact-container{
+         flex-direction: column;
+     }
+     .contact-container .contactinfo,
+     .contactform{
+         margin-bottom: 40px;
+     }
+ }
+
+ 

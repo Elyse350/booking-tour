@@ -62,8 +62,8 @@ ul li a:hover {
 body {
   background-image: linear-gradient(
       to top,
-      rgba(17, 83, 15, 0.301) 50%,
-      rgba(17, 83, 15, 0.301) 50%
+      rgba(9, 19, 8, 0.671) 50%,
+      rgba(9, 19, 8, 0.671) 50%
     ),
     url(./tour.jpg);
   background-repeat: no-repeat;
@@ -83,6 +83,37 @@ body {
   letter-spacing: 2px;
   color: white;
 }
+.slide{
+  width: 700px;
+  height: 450px;
+  background:url(gar1.jpg);
+  float: left;
+  margin-left:100px;
+  margin-top: 50px;
+  animation:slide 20s infinite  ;
+}
+  @keyframes slide {
+    25%{
+      background:url(gar2.jpg)
+    } 
+    40%{
+      background:url(gar3.jpg)
+    }
+     65%{
+      background:url(gar4.jpg)
+    } 
+    80%{
+      background:url(gar5.jpg)
+    }
+    95%{
+      background:url(gar6.jpg)
+    }
+    100%{
+      background:url(gar7.jpg)
+    }
+    
+  }
+
 .form {
   width: 25%;
   height: 380px;
@@ -108,6 +139,7 @@ button a {
   text-decoration: none;
   font-weight: bold;
 }
+
 .sub-container {
   width: 100%;
   height: 88vh;
@@ -156,7 +188,7 @@ button a {
 }
 .signup-form {
   width: 30%;
-  height: 65vh;
+  height: 68vh;
   background-color: rgba(140, 182, 150, 0.699);
   margin: auto;
   padding: 20px;
@@ -246,7 +278,7 @@ width: 20px;
 }
 .section-content .content h3{
 margin-top: 20px;
-color: #5d5d5d;
+color: #0f0f0f;
 font-size: 21px;
 }
 .section-content .content p{
@@ -330,7 +362,7 @@ font-size: 21px;
     justify-content: center;
     align-items:center ;
     flex-direction: column;
-    background: rgba(43, 116, 43, 0.699);
+    background: rgba(18, 26, 18, 0.699);
     background-size: cover;
 
 }
@@ -341,7 +373,7 @@ font-size: 21px;
 .contact .content2 h2{
     font-size:36px ;
     font-weight: 500;
-    color:rgb(9, 150, 21);
+    color:white;
 }.contact .content2 p{
     font-weight: 300;
     color:#fff;
@@ -383,7 +415,7 @@ font-size: 21px;
 }
 .contact-container .contactinfo .box .text h3{
     font-weight: 500;
-    color:#00bcd4
+    color:#088a1e
 }
 .contactform{
     width: 40%;
@@ -392,7 +424,7 @@ font-size: 21px;
 }
 .contactform h2{
     font-size: 30px;
-    color: rgb(247, 235, 235);
+    color: rgb(15, 13, 13);
     font-weight: 500;
 }
 .contactform .inputBox{
@@ -408,7 +440,7 @@ font-size: 21px;
     margin:10px 0;
     border: none;
     border-bottom: 2px solid #333;
-    outline:none;
+    /* outline:none; */
     resize: none;
 }
 .contactform .inputBox span{
@@ -426,13 +458,13 @@ font-size: 21px;
 .contactform .inputBox  input:valid~span ,
 .contactform .inputBox  textarea:focus~span,
 .contactform .inputBox  textarea:valid~span{
-      color: #e91e63;
+      color: #044607;
       font-size: 12px;
       transform: translateY(-20px);
  }
  .contactform .inputBox input[type="submit"]{
      width: 100px;
-     background: #00bcd4;
+     background: #0b3b0a;
      color: #fff;
      border: none;
      cursor: pointer;
@@ -451,5 +483,168 @@ font-size: 21px;
          margin-bottom: 40px;
      }
  }
-
+ .cont{
+   width: 100%;
+   height: 140vh;
+   background-color:rgba(117, 128, 119, 0.767);
+  display: flex;
+  
+ }
+ .tour{
+   width: 50%;
+   height: 120vh;
+   margin-top: 120px;
+   /* display: flex; */
+ }
  
+ .tour1{
+   width: 90%;
+   height: 30vh;
+   background-color:white;
+   margin-top: 20px;
+   margin-left: 50px;
+   display: flex;
+ }
+ .tour1 img{
+   width: 30%;
+   height: 30vh;
+ }
+ 
+/* .tour2{
+  width: 40%;
+  height: 30vh;
+  background-color:white;
+  margin-top: 50px;
+  margin-left: 50px;
+  
+}
+.tour h2 {
+display: flex;
+text-align: center;
+float:right;
+margin-right: 200px;
+}
+.tour p{
+  display: flex;
+  text-align: center;
+  float: left;
+  margin-bottom: 150px;
+  margin-left:50px ;
+  
+}
+.tour img{
+  width: 30%;
+  height: 30vh;
+}
+ .tour3{
+  width: 40%;
+  height: 30vh;
+  background-color:white;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.tour3 img{
+  width: 30%;
+  height: 30vh;
+}
+.img{
+  max-width: 100%;
+  height: auto; */
+
+/* } */
+
+
+.textbox{
+  width: 40%;
+  height: 80vh;
+  background-color: #97dd9de3;
+  margin-top: 180px;
+  margin-left: 70px;
+  /* display: inline-block; */
+}
+.textbox.inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.textbox .inputBox input
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline:none;
+    resize: none;
+}
+
+.textbox.inputBox  input:focus~span,
+.textbox.inputBox  input:valid~span{
+      color: #044607;
+      font-size: 12px;
+      transform: translateY(-20px);
+ }
+ .textbox .inputBox input[type="submit"]{
+  width: 100px;
+  background: #0b3b0a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+ .result{
+   width: 100%;
+   height: 86vh;
+   background-color: #fff;
+   display: flex;
+ }
+ .result h1{
+   color: rgb(16, 19, 16);
+   margin-top: 50px;
+   margin-left: 80px;
+ }
+ .header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.gallery{
+  width: 100%;
+  height: 250vh;
+  background-color: white;
+}
